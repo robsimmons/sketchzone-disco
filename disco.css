@@ -1,0 +1,19 @@
+body {
+    --sketchzone-ui-font-family: "Poetsen One", sans-serif;
+    --sketchzone-mono-font-family: "Kode Mono", monospace;
+    --sketchzone-radius: 16px;
+
+    --sketchzone-light-1-text: oklch(57% 0.18 282);
+    --sketchzone-light-1-active-button-text: oklch(52% 0.18 282);
+    --sketchzone-light-2-background: oklch(87% 0.05 50);
+    --sketchzone-light-2-text: oklch(47% 0.18 282);
+    --sketchzone-light-2-active-button-background: oklch(82% 0.05 50);
+    --sketchzone-light-2-active-button-text: oklch(42% 0.18 282);
+
+    --sketchzone-dark-1-text: oklch(67% 0.18 282);
+    --sketchzone-dark-1-active-button-text: oklch(72% 0.18 282);
+    --sketchzone-dark-2-background: oklch(37% 0.01 50);
+    --sketchzone-dark-2-text: oklch(77% 0.18 282);
+    --sketchzone-dark-2-active-button-background: oklch(42% 0.01 50);
+    --sketchzone-dark-2-active-button-text: oklch(82% 0.18 282);
+  }
