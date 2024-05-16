@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generic Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Fira+Sans+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link href="node_modules/sketchzone/css/reset.css" rel="stylesheet" />
+    <link href="node_modules/sketchzone/css/sketchzone.css" rel="stylesheet" />
+    <style>
+      
+    </style>
+  </head>
+  <body id="body-root">
+    <main id="main-root">
+      <div id="sketchzone-config"></div>
+      <div id="sketchzone-container">
+        <div id="sketchzone-header">
+          <div id="sketchzone-tabs"></div>
+          <div id="sketchzone-logo"></div>
+        </div>
+        <div id="sketchzone-active-sketch" class="active-sketch-is-showing-editor">
+          <div id="sketchzone-codemirror-root"></div>
+          <div id="sketchzone-divider"></div>
+          <div id="sketchzone-inspector-root">
+            <div id="sketchzone-inspector-controller" class="zone1"></div>
+            <div id="sketchzone-inspector-contents"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="modal-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
