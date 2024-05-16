@@ -23,8 +23,8 @@ function createAndMountInspector(root: HTMLDivElement, doc: DOCUMENT) {
 
 setup({
   createAndMountInspector,
-  appName: "simple-disco",
-  infoUrl: "https://glitch.com/edit/#!/sketchzone-simple-react?path=index.jsx",
+  appName: "sketchzone-disco",
+  infoUrl: "https://github.com/robsimmons/sketchzone-disco",
   codemirrorExtensions: [
     lineNumbers(),
     history(),

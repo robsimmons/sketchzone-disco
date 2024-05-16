@@ -4,17 +4,38 @@
     <meta charset="UTF-8" />
     <title>Generic Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- these next three tags, combined with the style section, configure the font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Fira+Sans+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poetsen+One&display=swap"
       rel="stylesheet"
     />
+
     <link href="node_modules/sketchzone/css/reset.css" rel="stylesheet" />
     <link href="node_modules/sketchzone/css/sketchzone.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.png" />
     <style>
+      body {
+        --sketchzone-ui-font-family: "Poetsen One", sans-serif;
+        --sketchzone-mono-font-family: "Kode Mono", monospace;
+        --sketchzone-radius: 16px;
 
+        --sketchzone-light-1-text: oklch(57% 0.18 282);
+        --sketchzone-light-1-active-button-text: oklch(52% 0.18 282);
+        --sketchzone-light-2-background: oklch(87% 0.05 50);
+        --sketchzone-light-2-text: oklch(47% 0.18 282);
+        --sketchzone-light-2-active-button-background: oklch(82% 0.05 50);
+        --sketchzone-light-2-active-button-text: oklch(42% 0.18 282);
+
+        --sketchzone-dark-1-text: oklch(67% 0.18 282);
+        --sketchzone-dark-1-active-button-text: oklch(72% 0.18 282);
+        --sketchzone-dark-2-background: oklch(37% 0.01 50);
+        --sketchzone-dark-2-text: oklch(77% 0.18 282);
+        --sketchzone-dark-2-active-button-background: oklch(42% 0.01 50);
+        --sketchzone-dark-2-active-button-text: oklch(82% 0.18 282);
+      }
     </style>
   </head>
   <body id="body-root">
@@ -25,7 +46,10 @@
           <div id="sketchzone-tabs"></div>
           <div id="sketchzone-logo"></div>
         </div>
-        <div id="sketchzone-active-sketch" class="active-sketch-is-showing-editor">
+        <div
+          id="sketchzone-active-sketch"
+          class="active-sketch-is-showing-editor"
+        >
           <div id="sketchzone-codemirror-root"></div>
           <div id="sketchzone-divider"></div>
           <div id="sketchzone-inspector-root">
