@@ -4,7 +4,7 @@
     "web": {
       "type": "static",
       "image": "node:latest",
-      "command": "npm install && npm run build"
+      "command": "npm run disco"
     }
   }
 }
