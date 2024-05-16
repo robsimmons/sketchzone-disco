@@ -3,7 +3,7 @@
   "services": {
     "web": {
       "type": "static",
-      "image": "nodejs/docker-node:latest",
+      "image": "node:latest",
       "command": "npm run build"
     }
   }
