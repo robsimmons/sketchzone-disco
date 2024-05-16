@@ -8,19 +8,34 @@ function createAndMountInspector(root: HTMLDivElement, doc: DOCUMENT) {
   const reactRoot = ReactDOM.createRoot(root);
   reactRoot.render(
     React.createElement(() => {
-      const [numPresses, setNumPresses] = React.useState(0);
+      let videoId;
+      if (doc.includes("Dancing Queen")) {
+        videoId = "-sVB91NTa4A";
+      } else if (doc.includes("I Will Survive")) {
+        videoId = "6dYWe1c3OyU";
+      } else if (doc.includes("Stayin Alive")) {
+        videoId = "I_izvAbhExY";
+      }
 
-      return (
-        <div className="sketchzone-rounded-inspector">
-          <div>There is/are {doc.split("\n").length} line(s)</div>
-          <div>You've pushed the button {numPresses} time(s).</div>
-          <button onClick={() => setNumPresses(numPresses + 1)}>Press</button>
-        </div>
-      );
+      const inner = videoId ? (
+        <iframe
+          width="560"
+          height="315"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        >
+        </iframe>
+      ) : (
+        <div>This ain't no disco</div>
+      )
+
+      return inner
     })
   );
 }
-
 setup({
   createAndMountInspector,
   appName: "sketchzone-disco",
@@ -35,7 +50,8 @@ setup({
     `Sketchzone on disco
 
 Kinda like any other static site on disco, I guess?`,
-    `Second tab`,
-    `Third tab`,
+    `Dancing Queen (ABBA)`,
+    `I Will Survive (Gloria Gaynor)`,
+    `Stayin Alive (The Bee Gees)`,
   ],
 });
