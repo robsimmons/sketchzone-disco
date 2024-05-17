@@ -2,7 +2,6 @@
   "version": "1.0",
   "services": {
     "web": {
-      "publicPath": "/code/dist",
       "type": "static",
       "command": "npm run build"
     }
