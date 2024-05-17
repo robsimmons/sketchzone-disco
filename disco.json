@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "publicPath": "/code/dist/",
   "services": {
     "web": {
       "type": "static",
