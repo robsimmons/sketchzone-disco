@@ -3,7 +3,8 @@
   "services": {
     "web": {
       "type": "static",
-      "command": "npm run build"
+      "command": "./build.sh",
+      "image": "node:latest"
     }
   }
 }
