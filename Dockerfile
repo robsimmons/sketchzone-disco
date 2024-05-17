@@ -1,6 +1,5 @@
 FROM node:latest
-WORKDIR /
-COPY package.json /
-COPY package-lock.json /
-RUN npm install
-COPY . /
+WORKDIR /cache
+COPY package.json /cache/package.json
+COPY package-lock.json /cache/package-lock.json
+RUN npm ci
