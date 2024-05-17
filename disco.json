@@ -3,7 +3,8 @@
   "services": {
     "web": {
       "type": "static",
-      "command": "NODE_PATH=/cache/node_modules npm run build"
+      "image": "node:latest",
+      "command": "npm run build"
     }
   }
 }
