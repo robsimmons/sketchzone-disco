@@ -3,8 +3,7 @@
   "services": {
     "web": {
       "type": "static",
-      "image": "node:latest",
-      "command": "npm run build"
+      "publicPath": "dist"
     }
   }
 }
